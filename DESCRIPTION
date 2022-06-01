@@ -1,0 +1,14 @@
+Package: zuericolors
+Title: Statistik Stadt Zuerich Colors (zuericolors)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alessandro",
+           family = "Feller",
+           email = "alessandro.feller@zuerich.ch")
+Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
