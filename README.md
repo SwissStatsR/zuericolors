@@ -1,13 +1,4 @@
----
-title: "Statistik Stadt Zuerich Colors (zuericolors)"
-output:
-  html_document: default
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
+# Statistik Stadt Zuerich Colors (zuericolors)
 zuericolors is an R-Package, which provides specific colors of the corporate design of the city of Zurich. The package contains all colors that [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/prd/de/index/statistik.html) needs for the creation of graphics. There are two main functions in zuericolors:
 
 * `get_zuericolors` extracts colors of a specific color palette and puts them into a vector.
@@ -37,19 +28,21 @@ packageVersion("zuericolors")
 ## Usage
 
 ```{r, message = FALSE}
-library(zuericolorsTest)
-```
-
-```{r, message = FALSE}
 library(zuericolors)
 
 # Get all the colors from palette "hamronic 6"
 get_zuericolors("harmonic6")
 
+[1] "#0f05a0" "#2ac7c7" "#0a8df6" "#a2e5b0" "#3d575e" "#23c3f1"
+
 # Get first color from palette "diverging5rotgruen"
 get_zuericolors("diverging5rotgruen", nth = 1)
 
+[1] "#EA4F61"
+
 # Get first four colors from palette "contrasting12"
 get_zuericolors("contrasting12", nth = 1:4)
+
+[1] "#0f05a0" "#65cd8c" "#960055" "#0098c6"
 ```
 
