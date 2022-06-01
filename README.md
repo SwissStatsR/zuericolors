@@ -1,3 +1,4 @@
+![zuericolors](https://user-images.githubusercontent.com/44610225/171417861-f36b91c6-1c2a-454a-8929-98999249f0bd.png)
 # Statistik Stadt Zuerich Colors (zuericolors)
 zuericolors is an R-Package, which provides specific colors of the corporate design of the city of Zurich. The package contains all colors that [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/prd/de/index/statistik.html) needs for the creation of graphics. There are two main functions in zuericolors:
 
@@ -44,5 +45,9 @@ get_zuericolors("diverging5rotgruen", nth = 1)
 get_zuericolors("contrasting12", nth = 1:4)
 
 [1] "#0f05a0" "#65cd8c" "#960055" "#0098c6"
+
+# View color palette "harmonic12"
+view_zuericolors("harmonic12")
 ```
-![harmonic12](https://user-images.githubusercontent.com/44610225/171417276-b431e175-d8bd-49de-87b3-59f0acfe99b6.jpeg)
+
+![harmonic12](https://user-images.githubusercontent.com/44610225/171417841-2b4ff5a2-14df-47e9-a130-323dfc7c7fa6.jpeg)
