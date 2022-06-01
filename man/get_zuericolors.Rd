@@ -9,7 +9,6 @@ Function to access a specific hex values of a color palette from zuericolors.
 \usage{
 get_zuericolors(palette, nth)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{palette}{
 Character String which defines the available Palettes in zuericolors.
