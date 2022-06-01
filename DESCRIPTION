@@ -1,10 +1,8 @@
 Package: zuericolors
 Title: Statistik Stadt Zuerich Colors (zuericolors)
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Alessandro",
-           family = "Feller",
-           email = "alessandro.feller@zuerich.ch")
+Author: Statistik Stadt Zuerich
+Maintainer: Alessandro Feller <alessandro.feller@zuerich.ch>
 Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
