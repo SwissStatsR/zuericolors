@@ -4,7 +4,7 @@
 Get Colors and Palettes from zuericolors
 }
 \description{
-Function to get a specific hex value of a color palette from zuericolors. It is also possible to extract multiple color values.
+Function to access a specific hex values of a color palette from zuericolors.
 }
 \usage{
 get_zuericolors(palette, nth)
@@ -15,12 +15,12 @@ get_zuericolors(palette, nth)
 Character String which defines the available Palettes in zuericolors.
 }
   \item{nth}{
-Numeric Value which defines what specific Color to extract.
+Numeric Value which defines what specific Color to extract. 
 }
 }
 
 \value{
-get_zuericolors() returns a list with all available Palettes. If a specific Palette has been defined, the function will return a vector with the respective hex values.
+This functions returns specific hex color values in a vector. If no palette is provided, get_zuericolors prints all available color palettes as a list.
 }
 
 \author{

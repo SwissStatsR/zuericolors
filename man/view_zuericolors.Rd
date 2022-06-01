@@ -4,7 +4,7 @@
 View Palettes from zuericolors
 }
 \description{
-Function that allows to visually view a specific zuericolors color Palette.
+Function that allows to visually inspect a specific zuericolors color Palette.
 }
 \usage{
 view_zuericolors(palette = " ")
@@ -16,7 +16,7 @@ Character String which defines the available Palettes in zuericolors.
 }
 
 \value{
-view_zuericolors() returns a ggplot2 object.
+This functions returns a specific color palette as a ggplot2 object. If no palette is provided, view_zuericolors prints all available color palettes.
 }
 \author{
 Alessandro Feller, Scientific Researcher, alessandro.feller@zuerich.ch, Statistik Stadt Zürich (SSZ)
