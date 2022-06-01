@@ -45,7 +45,4 @@ get_zuericolors("contrasting12", nth = 1:4)
 
 [1] "#0f05a0" "#65cd8c" "#960055" "#0098c6"
 ```
-
-<img src="harmonic12.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+![harmonic12](https://user-images.githubusercontent.com/44610225/171417276-b431e175-d8bd-49de-87b3-59f0acfe99b6.jpeg)
