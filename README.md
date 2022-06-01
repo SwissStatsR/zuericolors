@@ -1,4 +1,4 @@
-![zuericolors](https://user-images.githubusercontent.com/44610225/171419681-1f4cb829-bf0b-47f8-8b09-6cdadfbd0bed.png)
+![zuericolors](https://user-images.githubusercontent.com/44610225/171420270-1c847b7c-d726-4294-88e6-d94a034eec62.png)
 
 
 # Statistik Stadt Zuerich Colors (zuericolors)
