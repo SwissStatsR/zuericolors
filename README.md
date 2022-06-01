@@ -51,3 +51,4 @@ view_zuericolors("harmonic12")
 ```
 
 ![harmonic12](https://user-images.githubusercontent.com/44610225/171417841-2b4ff5a2-14df-47e9-a130-323dfc7c7fa6.jpeg)
+![harmonic12](https://user-images.githubusercontent.com/44610225/171420882-c6714719-2114-4c57-82a7-7da95e37695b.jpeg)
