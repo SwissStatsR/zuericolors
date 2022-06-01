@@ -22,6 +22,5 @@ view_zuericolors() returns a ggplot2 object.
 Alessandro Feller, Scientific Researcher, alessandro.feller@zuerich.ch, Statistik Stadt Zürich (SSZ)
 }
 \examples{
-\examples{
 # View the Colors of Palette "harmonic6"
 view_zuericolors("harmonic6")

@@ -36,4 +36,3 @@ get_zuericolors("harmonic6", nth = 3)
 
 # Get the first three Color Values of Palette "harmonic6"
 get_zuericolors("harmonic6", nth = 1:3)
-
