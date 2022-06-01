@@ -1,3 +1,4 @@
+![zuericolors](https://user-images.githubusercontent.com/44610225/171419681-1f4cb829-bf0b-47f8-8b09-6cdadfbd0bed.png)
 
 
 # Statistik Stadt Zuerich Colors (zuericolors)
@@ -52,4 +53,3 @@ view_zuericolors("harmonic12")
 ```
 
 ![harmonic12](https://user-images.githubusercontent.com/44610225/171417841-2b4ff5a2-14df-47e9-a130-323dfc7c7fa6.jpeg)
-![zuericolors](https://user-images.githubusercontent.com/44610225/171419377-545845ad-633f-4d3d-9f3d-5a04af62f1a9.png)
