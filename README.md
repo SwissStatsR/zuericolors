@@ -1,5 +1,5 @@
 ![zuericolors](https://user-images.githubusercontent.com/44610225/171417861-f36b91c6-1c2a-454a-8929-98999249f0bd.png){width=50%}
-<a href='https://dplyr.tidyverse.org'><img src='man/figures/logo.png' align="right" height="139" /></a>
+<img src='https://user-images.githubusercontent.com/44610225/171417861-f36b91c6-1c2a-454a-8929-98999249f0bd.png)' align="right" height="139" /></a>
 # Statistik Stadt Zuerich Colors (zuericolors)
 zuericolors is an R-Package, which provides specific colors of the corporate design of the city of Zurich. The package contains all colors that [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/prd/de/index/statistik.html) needs for the creation of graphics. There are two main functions in zuericolors:
 
