@@ -51,7 +51,7 @@ view_zuericolors("harmonic12")
 ```
 
 
-![harmonic12](pictures/harmonic12.jpg)
+![harmonic12](https://github.com/StatistikStadtZuerich/zuericolors/blob/main/pictures/harmonic12.JPG)
 
 ## Getting help
 
