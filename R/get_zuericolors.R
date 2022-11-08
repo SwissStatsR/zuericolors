@@ -20,7 +20,7 @@
 get_zuericolors <- function(palette, nth) {
   choosenPalette <- deparse(substitute(palette))
   if (missing(palette) & missing(nth)) {
-    lists <- lapply(palettes, head)
+    lists <- palettes
     return(lists)
   }
   if (missing(palette) & !missing(nth)) {
