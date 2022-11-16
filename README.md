@@ -27,6 +27,10 @@ To check your version of zuericolors, run:
 packageVersion("zuericolors")
 ```
 
+## Available Palettes
+
+<img src='pictures/Palettes.JPG' />
+
 ## Usage
 
 ```{r, message = FALSE}
