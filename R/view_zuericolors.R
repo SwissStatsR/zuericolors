@@ -38,7 +38,9 @@ view_zuericolors <- function(palette = " ") {
                                                            hjust = 0.5))
                          p
                        })
-    allplots <- ggarrange(plotlist = plotList)
+    allplots <- ggarrange(plotlist = plotList,
+                          ncol = 2,
+                          nrow = 10)
     return(allplots)
   }
   if (is.null(palettes[[palette]])) {
@@ -69,3 +71,4 @@ view_zuericolors <- function(palette = " ") {
     return(p)
   }
 }
+view_zuericolors()
