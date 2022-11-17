@@ -19,17 +19,17 @@
 #' @export
 get_zuericolors <- function(palette, nth) {
   
-  # Available palettes in SSZ CI/CD
+  # All Available palettes in zuericolors
   paletteNames <- names(palettes)
   
-  # Return all SZZ palettes in console
+  # Return all palettes in console (when both function arguments are missing)
   if (missing(palette) & missing(nth)) {
     return(palettes)
   }
   
   # Return error message if palette (argument) is missing (but not position argument)
   if (missing(palette) & !missing(nth)) {
-    warning <- c('You forgot to define a palette. Please choose one of the following palettes above.')
+    warning <- c('You forgot to define a palette. Please choose one of the palettes above.')
     stop(warning, cat(paletteNames, sep = "\n"))
   }
   
@@ -40,14 +40,15 @@ get_zuericolors <- function(palette, nth) {
   paletteOut <- palettes[[chosenPalette]]
   colorOut <- paletteOut[nth]
   
-  # Return all colors if palette (argument) matches available SSZ palettes
+  # Return all colors if palette (argument) matches available palettes
   if (chosenPalette %in% paletteNames & !missing(nth)) {
     
     # Check if position (nth argument) is available in chosen palette (argument)
     paletteLast <- last(length(paletteOut))
     nCheck <- last(nth)
     
-    # If position (nth argument) is > than length of chosen palette (argument), then return error message
+    # Return Error message if position (nth argument) is > than length of chosen palette (argument)
+    # Else return colors of chosen palette
     if (last(paletteLast < nCheck)) {
       warning <- paste0('The palette ', '"', chosenPalette, '"', ' contains ', paletteLast, ' colors. Please change color position parameter (nth).')
       stop(warning)
@@ -56,11 +57,12 @@ get_zuericolors <- function(palette, nth) {
     }
   } 
   
-  # Return colors if palette (argument) matches available SSZ palettes and position (nth argument) is defined
+  # Return colors if palette (argument) matches available palettes and position (nth argument) is defined
+  # Else return error message
   if (chosenPalette %in% paletteNames) {
     return (colorOut)
   } else {
-    warning <- paste0('The palette ', '"', chosenPalette, '"', ' does not exist. Have you checked for Typos? Please choose one of the following palettes above.')
+    warning <- paste0('The palette ', '"', chosenPalette, '"', ' does not exist. Have you checked for Typos? Please choose one of the palettes above.')
     stop(warning, cat(paletteNames, sep = "\n"))
   }
 }

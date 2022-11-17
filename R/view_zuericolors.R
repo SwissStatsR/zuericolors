@@ -12,17 +12,16 @@
 #' @import ggpubr
 #'
 #' @examples
-#' # View colors of palette "harmonic6"
 #' view_zuericolors("harmonic6")
 view_zuericolors <- function(palette) {
   
-  # Available palettes in SSZ CI/CD
+  # All Available palettes in zuericolors
   paletteNames <- names(palettes)
   
   # Transform palette (argument) for further use
   chosenPalette <<- tolower(as.character(substitute(palette)))
   
-  # Return all SSZ palettes in a plot
+  # Return all palettes in a plot
   if (missing(palette))  {
     plotList <- lapply(names(palettes),
                        function(paletteName) {
@@ -51,7 +50,7 @@ view_zuericolors <- function(palette) {
     return(allplots)
   }
   
-  # Return error message if palette (argument) does not match with available SSZ palettes 
+  # Return error message if palette (argument) does not match with available palettes 
   # Else return plot with chosen palette
   if (chosenPalette %in% paletteNames) {
     name <- chosenPalette
@@ -76,7 +75,7 @@ view_zuericolors <- function(palette) {
                                       hjust = 0.5))
     return(p)
   } else {
-    warning <- paste0('The palette ', '"', chosenPalette, '"', ' does not exist. Have you checked for Typos? Please choose one of the following palettes above.')
+    warning <- paste0('The palette ', '"', chosenPalette, '"', ' does not exist. Have you checked for Typos? Please choose one of the palettes above.')
     stop(warning, cat(paletteNames, sep = "\n"))
   }
 }
