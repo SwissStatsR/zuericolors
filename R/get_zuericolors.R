@@ -43,7 +43,6 @@ get_zuericolors <- function(palette, nth) {
   # Return all colors if palette (argument) matches available palettes
   if (chosenPalette %in% paletteNames & !missing(nth)) {
     
-    # Check if position (nth argument) is available in chosen palette (argument)
     paletteLast <- last(length(paletteOut))
     nCheck <- last(nth)
     
