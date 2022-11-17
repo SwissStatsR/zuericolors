@@ -101,8 +101,3 @@ view_zuericolors <- function(palette) {
     )
   return(p)
 }
-
-# view_zuericolors
-# view_zuericolors("harmonic6)
-# view_zuericolors("haRmonic6)
-# view_zuericolors(harmonic6)

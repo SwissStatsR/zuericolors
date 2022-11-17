@@ -25,7 +25,7 @@ get_zuericolors <- function(palette, nth) {
 
   # Return all palettes in console when both function arguments are missing
   if (missing(palette) & missing(nth)) {
-    warning("Please choose one of the available palettes.")
+    warning("Please choose one of the available palettes above.")
     return(palettes)
   }
 
@@ -67,15 +67,3 @@ get_zuericolors <- function(palette, nth) {
   colorOut <- paletteOut[nth]
   return(colorOut)
 }
-
-# get_zuericolors()
-# get_zuericolors("harmonic6")
-# get_zuericolors("hArmonic6")
-# get_zuericolors("harmonic6", nth = 3)
-# get_zuericolors("harmonic6", nth = 2:4)
-# get_zuericolors("harmonic6", nth = 5:7)
-# get_zuericolors("harmonic6", nth = 20)
-# get_zuericolors(palette = 1, nth = 1)
-# get_zuericolors(nth = 1)
-# get_zuericolors(harmonic6, 2)
-# get_zuericolors("asdf",)

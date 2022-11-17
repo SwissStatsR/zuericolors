@@ -1,5 +1,5 @@
-#' Zueridown Color Palettes
-#' @description Available color palettes that correspond to the corporate design of the city of Zurich. These palettes should be used for graphics created with R.
+#' Zuericolors Palettes
+#' @description Available color palettes that correspond to the corporate design of the city of Zurich.
 #'
 #' @examples palettes
 #' @export

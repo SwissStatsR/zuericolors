@@ -3,7 +3,7 @@
 \docType{data}
 \name{palettes}
 \alias{palettes}
-\title{Zueridown Color Palettes}
+\title{Zuericolors Palettes}
 \format{
 An object of class \code{list} of length 20.
 }
@@ -11,7 +11,7 @@ An object of class \code{list} of length 20.
 palettes
 }
 \description{
-Available color palettes that correspond to the corporate design of the city of Zurich. These palettes should be used for graphics created with R.
+Available color palettes that correspond to the corporate design of the city of Zurich.
 }
 \examples{
 palettes
