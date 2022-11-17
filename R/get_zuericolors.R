@@ -66,6 +66,7 @@ get_zuericolors <- function(palette, nth) {
   }
 }
 
+
 #get_zuericolors()
 #get_zuericolors("harmonic6")
 #get_zuericolors("hArmonic6")

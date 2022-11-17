@@ -19,7 +19,7 @@ view_zuericolors <- function(palette) {
   paletteNames <- names(palettes)
   
   # Transform palette (argument) for further use
-  chosenPalette <<- tolower(as.character(substitute(palette)))
+  chosenPalette <- tolower(as.character(substitute(palette)))
   
   # Return all palettes in a plot
   if (missing(palette))  {
