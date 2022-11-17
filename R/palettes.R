@@ -2,7 +2,6 @@
 #' @description Available color palettes that correspond to the corporate design of the city of Zurich.
 #'
 #' @examples palettes
-#' @export
 palettes <- list(
   "gray10" = c("#2a2a2a", "#404040", "#606060", "#7c7c7c", "#989898", "#aaaaaa", "#c2c2c2", "#d2d2d2", "#e8e8e8", "#f4f4f4"),
   "gray10cool" = c("#001215", "#082429", "#223a41", "#3d575e", "#5c7781", "#79949f", "#8dafbc", "#b2ccd7", "#dfe9ef", "#f4f7f9"),
