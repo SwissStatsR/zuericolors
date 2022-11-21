@@ -4,13 +4,12 @@ Version: 0.0.0.9000
 Author: Statistik Stadt Zuerich
 Maintainer: Alessandro Feller <alessandro.feller@zuerich.ch>
 Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: BSD-3-Clause + file LICENSE
 Encoding: UTF-8
 Imports: ggplot2, scales, ggpubr
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

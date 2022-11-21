@@ -4,15 +4,16 @@
 #'
 #' @param palette Name of a specific palette. if it is not provided, all palettes are plotted.
 #'
-#' @return
+#' @return returns a plot of the requested color/palette
 #' @export
 #'
 #' @import scales
 #' @import ggplot2
 #' @import ggpubr
 #'
-#' @examples
+#' @examples \dontrun{
 #' view_zuericolors("harmonic6")
+#' }
 view_zuericolors <- function(palette) {
 
   # All Available palettes in zuericolors

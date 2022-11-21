@@ -18,6 +18,7 @@ the color(s) as hex strings
 Function to access color values of a specific zuericolors palette.
 }
 \examples{
+\dontrun{
 # Get colors of palette "harmonic6"
 get_zuericolors("harmonic6")
 
@@ -26,4 +27,5 @@ get_zuericolors("harmonic6", 3)
 
 # Get first three color values of palette "harmonic6"
 get_zuericolors("harmonic6", 1:3)
+}
 }

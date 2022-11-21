@@ -7,14 +7,16 @@
 view_zuericolors(palette)
 }
 \arguments{
-\item{palette}{Name of a specific palette}
+\item{palette}{Name of a specific palette. if it is not provided, all palettes are plotted.}
 }
 \value{
-
+returns a plot of the requested color/palette
 }
 \description{
 Function to visually inspect values and colors of a specific zuericolors palette
 }
 \examples{
+\dontrun{
 view_zuericolors("harmonic6")
+}
 }
