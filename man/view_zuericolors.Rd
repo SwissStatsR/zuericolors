@@ -17,6 +17,6 @@ Function to visually inspect values and colors of a specific zuericolors palette
 }
 \examples{
 \dontrun{
-view_zuericolors("harmonic6")
+view_zuericolors('harmonic6')
 }
 }
