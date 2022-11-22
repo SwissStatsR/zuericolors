@@ -8,7 +8,7 @@
 #'
 #' @return the color(s) as hex strings
 #'
-#' @examples
+#' @examples \dontrun{
 #' # Get colors of palette "harmonic6"
 #' get_zuericolors("harmonic6")
 #'
@@ -17,20 +17,17 @@
 #'
 #' # Get first three color values of palette "harmonic6"
 #' get_zuericolors("harmonic6", 1:3)
+#' }
 #' @export
 get_zuericolors <- function(palette, nth) {
+  
 
   # All Available palettes in zuericolors
   paletteNames <- names(palettes)
 
-  # Return all palettes in console when both function arguments are missing
-  if (missing(palette) & missing(nth)) {
-    warning("Please choose one of the available palettes above.")
-    return(palettes)
-  }
 
-  # Return error message if palette argument is missing but position argument (named) has been provided
-  if (missing(palette) & !missing(nth)) {
+  # Return error message if palette argument is missing (even if position argument (named) has been provided)
+  if ((missing(palette) & missing(nth)) || (missing(palette) & !missing(nth))) {
     warning <- c("You forgot to define a palette. Please choose one of the palettes above.")
     stop(warning, cat(paletteNames, sep = "\n"))
   }

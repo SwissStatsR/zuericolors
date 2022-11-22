@@ -2,17 +2,18 @@
 #'
 #' @description Function to visually inspect values and colors of a specific zuericolors palette
 #'
-#' @param palette Name of a specific palette
+#' @param palette Name of a specific palette. if it is not provided, all palettes are plotted.
 #'
-#' @return
+#' @return returns a plot of the requested color/palette
 #' @export
 #'
 #' @import scales
 #' @import ggplot2
 #' @import ggpubr
 #'
-#' @examples
+#' @examples \dontrun{
 #' view_zuericolors("harmonic6")
+#' }
 view_zuericolors <- function(palette) {
 
   # All Available palettes in zuericolors
@@ -64,8 +65,8 @@ view_zuericolors <- function(palette) {
 
   # Return error message if palette (argument) does not match with available palettes
   if (!(chosenPalette %in% paletteNames)) {
-    warning <- paste0("The palette ", '"', chosenPalette, '"', " does not exist. Have you checked for Typos? Please choose one of the palettes above.")
-    stop(warning, cat(paletteNames, sep = "\n"))
+    message <- paste0("The palette ", '"', chosenPalette, '"', " does not exist. Have you checked for Typos? Please choose one of the palettes above.")
+    stop(message, cat(paletteNames, sep = "\n"))
   }
 
   # a valid palette has been provided --> prepare plot and return

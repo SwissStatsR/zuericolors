@@ -13,7 +13,4 @@ palettes
 \description{
 Available color palettes that correspond to the corporate design of the city of Zurich.
 }
-\examples{
-palettes
-}
-\keyword{datasets}
+\keyword{internal}
