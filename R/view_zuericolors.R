@@ -11,9 +11,8 @@
 #' @import ggplot2
 #' @import ggpubr
 #'
-#' @examples \dontrun{
+#' @examples 
 #' view_zuericolors('harmonic6')
-#' }
 view_zuericolors <- function(palette) {
 
   # All Available palettes in zuericolors

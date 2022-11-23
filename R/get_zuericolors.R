@@ -8,7 +8,7 @@
 #'
 #' @return the color(s) as hex strings
 #'
-#' @examples \dontrun{
+#' @examples 
 #' # Get colors of palette 'harmonic6'
 #' get_zuericolors('harmonic6')
 #'
@@ -17,7 +17,7 @@
 #'
 #' # Get first three color values of palette 'harmonic6'
 #' get_zuericolors('harmonic6', 1:3)
-#' }
+#' 
 #' @export
 get_zuericolors <- function(palette, nth) {
 

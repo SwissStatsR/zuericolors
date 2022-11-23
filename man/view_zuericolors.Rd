@@ -16,7 +16,5 @@ returns a plot of the requested color/palette
 Function to visually inspect values and colors of a specific zuericolors palette
 }
 \examples{
-\dontrun{
 view_zuericolors('harmonic6')
-}
 }
