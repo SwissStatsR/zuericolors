@@ -1,10 +1,10 @@
 # test 1: normal functioning with correct arguments
 test_that("a plot is returned", {
-  
+
   # when a palette is specified
   expect_type(view_zuericolors("harmonic6"), "list")
   expect_s3_class(view_zuericolors("harmonic6"), c("gg", "ggplot"))
-  
+
   # when no palette is specified
   expect_type(view_zuericolors(), "list")
   expect_s3_class(view_zuericolors(), c("gg", "ggplot", "ggarrange"))
