@@ -17,7 +17,7 @@ devtools::install_github("StatistikStadtZuerich/zuericolors")
 Alternatively, download the files (by clicking 'Clone or download' / 'Download Zip'), extract it to any location on your computer, e.g. to your Desktop and then run:
 
 ```{r, eval = FALSE}
-remotes::install_local("<path_to_location>/zuericolors-main", dependencies = FALSE)
+remotes::install_local("<path_to_location>/zuericolors-main")
 ```
 
 ## Version
