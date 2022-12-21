@@ -56,10 +56,6 @@ view_zuericolors("qual12")
 
 ## Usage
 
-### Available Palettes
-
-<img src='pictures/Palettes.JPG' />
-
 ### Grey Palette
 The grey color palette is not a palette in the true sense. However, its individual colors are needed for different features in [sszviz](https://github.com/StatistikStadtZuerich/sszvis):
 
@@ -87,6 +83,26 @@ Qualitative palettes are used for data that has distinct categories. They distin
 
 <img src='pictures/qual12da.JPG' />
 
-## Getting help
+### Sequential Palettes
+Sequential palettes are used to compare values. These palettes are designed to have the same brightness for the same input value.
 
+<img src='pictures/seq9blu.JPG' />
+
+<img src='pictures/seq9red.JPG' />
+
+<img src='pictures/seq9grn.JPG' />
+
+<img src='pictures/seq9brn.JPG' />
+
+### Divergent Palettes
+Divergent palettes are used to compare data that has two extremes. These scales are
+designed to have the same brightness for the same input value. They come in two color variations:
+the valued (red-green) variation is used for data that has negative-positive characteristics, the
+neutral (brown-blue) variation is used in cases where no valuation is wanted.
+
+<img src='pictures/seq9blu.JPG' />
+
+<img src='pictures/seq9red.JPG' />
+
+## Getting help
 If you encounter a bug, please contact statistik@zuerich.ch.
