@@ -18,13 +18,13 @@ the color(s) as hex strings
 Function to access color values of a specific zuericolors palette.
 }
 \examples{
-# Get colors of palette 'harmonic6'
-get_zuericolors('harmonic6')
+# Get colors of palette 'qual12'
+get_zuericolors('qual12')
 
-# Get third color value of palette 'harmonic6'
-get_zuericolors('harmonic6', 3)
+# Get third color value of palette 'qual12'
+get_zuericolors('qual12', 3)
 
-# Get first three color values of palette 'harmonic6'
-get_zuericolors('harmonic6', 1:3)
+# Get first three color values of palette 'qual12'
+get_zuericolors('qual12', 1:3)
 
 }

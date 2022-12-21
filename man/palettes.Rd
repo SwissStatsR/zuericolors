@@ -5,7 +5,7 @@
 \alias{palettes}
 \title{Zuericolors Palettes}
 \format{
-An object of class \code{list} of length 20.
+An object of class \code{list} of length 15.
 }
 \usage{
 palettes
