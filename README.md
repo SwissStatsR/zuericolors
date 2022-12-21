@@ -27,11 +27,7 @@ To check your version of zuericolors, run:
 packageVersion("zuericolors")
 ```
 
-## Available Palettes
-
-<img src='pictures/Palettes.JPG' />
-
-## Usage
+## Examples
 
 ```{r, message = FALSE}
 library(zuericolors)
@@ -57,6 +53,39 @@ view_zuericolors("qual12")
 
 
 <img src='pictures/qual12.JPG' />
+
+## Usage
+
+### Available Palettes
+
+<img src='pictures/Palettes.JPG' />
+
+### Grey Palette
+The grey color palette is not a palette in the true sense. However, its individual colors are needed for different features in [sszviz](https://github.com/StatistikStadtZuerich/sszvis):
+
+* `LightGry (#FAFAFA)`: A light grey scale is included for use in cases where a data background should be shaded out.
+* `PaleGry (#EAEAEA)`: A pale grey shade which is used for elements which should be in the background, but shouldn’t completely fade out. Currently used as the color of the links in the [sankey diagram](https://statistikstadtzuerich.github.io/sszvis/#/sankey).
+* `Gry (#D6D6D6)`: A grey scale is included for use in cases where a data value should be shaded out. Currently, it is used for the color of inactive lines in the coordinated map and line chart example. At the moment, it has only one value.
+* `DimGry (#B8B8B8)`: A dim grey shade used for highlighting elements which are normally grey (sszvis.scaleGry()). Currently, it is used as the highlight color in the [bubble map](https://statistikstadtzuerich.github.io/sszvis/#/map-signature).
+* `MedGry (#7C7C7C)`: The medium grey color, as a standalone value.
+* `DeepGry (#545454)`: The deep grey color, as a standalone value.
+
+<img src='pictures/seq6gry.JPG' />
+
+### Qualitative Palettes
+Qualitative palettes are used for data that has distinct categories. They distinguish categories based on color contrast. They should never be used to compare values, use sequential or divergent palettes in this case.
+
+<img src='pictures/qual12.JPG' />
+
+<img src='pictures/qual6.JPG' />
+
+<img src='pictures/qual6a.JPG' />
+
+<img src='pictures/qual6b.JPG' />
+
+<img src='pictures/qual12br.JPG' />
+
+<img src='pictures/qual12da.JPG' />
 
 ## Getting help
 
