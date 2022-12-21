@@ -16,5 +16,5 @@ returns a plot of the requested color/palette
 Function to visually inspect values and colors of a specific zuericolors palette
 }
 \examples{
-view_zuericolors('qual12')
+view_zuericolors("qual12")
 }

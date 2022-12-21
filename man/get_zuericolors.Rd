@@ -19,12 +19,12 @@ Function to access color values of a specific zuericolors palette.
 }
 \examples{
 # Get colors of palette 'qual12'
-get_zuericolors('qual12')
+get_zuericolors("qual12")
 
 # Get third color value of palette 'qual12'
-get_zuericolors('qual12', 3)
+get_zuericolors("qual12", 3)
 
 # Get first three color values of palette 'qual12'
-get_zuericolors('qual12', 1:3)
+get_zuericolors("qual12", 1:3)
 
 }
