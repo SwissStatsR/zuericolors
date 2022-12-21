@@ -100,9 +100,9 @@ designed to have the same brightness for the same input value. They come in two 
 the valued (red-green) variation is used for data that has negative-positive characteristics, the
 neutral (brown-blue) variation is used in cases where no valuation is wanted.
 
-<img src='pictures/seq9blu.JPG' />
+<img src='pictures/div9val.JPG' />
 
-<img src='pictures/seq9red.JPG' />
+<img src='pictures/div9ntr.JPG' />
 
 ## Getting help
 If you encounter a bug, please contact statistik@zuerich.ch.
