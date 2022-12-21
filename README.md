@@ -27,37 +27,82 @@ To check your version of zuericolors, run:
 packageVersion("zuericolors")
 ```
 
-## Available Palettes
-
-<img src='pictures/Palettes.JPG' />
-
-## Usage
+## Examples
 
 ```{r, message = FALSE}
 library(zuericolors)
 
-# Get all the colors from palette "hamronic 6"
-get_zuericolors("harmonic6")
+# Get all the colors from palette "qual6"
+get_zuericolors("qual6")
 
-[1] "#0f05a0" "#2ac7c7" "#0a8df6" "#a2e5b0" "#3d575e" "#23c3f1"
+[1] "#3431DE" "#DB247D" "#1D942E" "#FBB900" "#23C3F1" "#FF720C"
 
-# Get first color from palette "diverging5rotgruen"
-get_zuericolors("diverging5rotgruen", nth = 1)
+# Get first color from palette "div9ntrgry"
+get_zuericolors("div9ntrgry", nth = 1)
 
-[1] "#EA4F61"
+"#A30059"
 
-# Get first four colors from palette "contrasting12"
-get_zuericolors("contrasting12", nth = 1:4)
+# Get first four colors from palette "qual12"
+get_zuericolors("qual12", nth = 1:4)
 
-[1] "#0f05a0" "#65cd8c" "#960055" "#0098c6"
+[1] "#3431DE" "#0A8DF6" "#23C3F1" "#7B4FB7"
 
-# View color palette "harmonic12"
-view_zuericolors("harmonic12")
+# View color palette "qual12"
+view_zuericolors("qual12")
 ```
 
 
-<img src='pictures/harmonic12.JPG' />
+<img src='pictures/qual12.JPG' />
+
+## Usage
+
+### Grey Palette
+The grey color palette is not a palette in the true sense. However, its individual colors are needed for different features in [sszviz](https://github.com/StatistikStadtZuerich/sszvis):
+
+* `LightGry (#FAFAFA)`: A light grey scale is included for use in cases where a data background should be shaded out.
+* `PaleGry (#EAEAEA)`: A pale grey shade which is used for elements which should be in the background, but shouldn’t completely fade out. Currently used as the color of the links in the [sankey diagram](https://statistikstadtzuerich.github.io/sszvis/#/sankey).
+* `Gry (#D6D6D6)`: A grey scale is included for use in cases where a data value should be shaded out. Currently, it is used for the color of inactive lines in the coordinated map and line chart example. At the moment, it has only one value.
+* `DimGry (#B8B8B8)`: A dim grey shade used for highlighting elements which are normally grey (sszvis.scaleGry()). Currently, it is used as the highlight color in the [bubble map](https://statistikstadtzuerich.github.io/sszvis/#/map-signature).
+* `MedGry (#7C7C7C)`: The medium grey color, as a standalone value.
+* `DeepGry (#545454)`: The deep grey color, as a standalone value.
+
+<img src='pictures/seq6gry.JPG' />
+
+### Qualitative Palettes
+Qualitative palettes are used for data that has distinct categories. They distinguish categories based on color contrast. They should never be used to compare values, use sequential or divergent palettes in this case.
+
+<img src='pictures/qual12.JPG' />
+
+<img src='pictures/qual6.JPG' />
+
+<img src='pictures/qual6a.JPG' />
+
+<img src='pictures/qual6b.JPG' />
+
+<img src='pictures/qual12br.JPG' />
+
+<img src='pictures/qual12da.JPG' />
+
+### Sequential Palettes
+Sequential palettes are used to compare values. These palettes are designed to have the same brightness for the same input value.
+
+<img src='pictures/seq9blu.JPG' />
+
+<img src='pictures/seq9red.JPG' />
+
+<img src='pictures/seq9grn.JPG' />
+
+<img src='pictures/seq9brn.JPG' />
+
+### Divergent Palettes
+Divergent palettes are used to compare data that has two extremes. These scales are
+designed to have the same brightness for the same input value. They come in two color variations:
+the valued (red-green) variation is used for data that has negative-positive characteristics, the
+neutral (brown-blue) variation is used in cases where no valuation is wanted.
+
+<img src='pictures/div9val.JPG' />
+
+<img src='pictures/div9ntr.JPG' />
 
 ## Getting help
-
 If you encounter a bug, please contact statistik@zuerich.ch.

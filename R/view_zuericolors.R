@@ -11,8 +11,8 @@
 #' @import ggplot2
 #' @import ggpubr
 #'
-#' @examples 
-#' view_zuericolors('harmonic6')
+#' @examples
+#' view_zuericolors("qual12")
 view_zuericolors <- function(palette) {
 
   # All Available palettes in zuericolors
@@ -25,18 +25,24 @@ view_zuericolors <- function(palette) {
       color <- palettes[[palette_name]]
       value <- seq_len(length(color))
       data <- data.frame(value, color)
-      p <- ggplot(data = data, aes(x = as.factor(value),
-                                  fill = as.factor(value),
-                                  label = color)) +
+      p <- ggplot(data = data, aes(
+        x = as.factor(value),
+        fill = as.factor(value),
+        label = color
+      )) +
         scale_fill_manual(values = c(color)) +
         scale_y_continuous(limits = c(-1, 1)) +
         geom_bar() +
         theme_void() +
         labs(title = name) +
-        theme(legend.position = "none",
-              axis.text.x = element_blank(),
-              plot.title = element_text(size = 10,
-                                        hjust = 0.5))
+        theme(
+          legend.position = "none",
+          axis.text.x = element_blank(),
+          plot.title = element_text(
+            size = 10,
+            hjust = 0.5
+          )
+        )
       p
     })
     allplots <- ggarrange(plotlist = plot_list, ncol = 2, nrow = 10)
@@ -49,8 +55,10 @@ view_zuericolors <- function(palette) {
   # Return error message if palette (argument) does not match with available
   # palettes
   if (!(chosen_palette %in% palette_names)) {
-    message <- paste0("The palette ", "\"", chosen_palette, "\"", 
-                      " does not exist. Have you checked for Typos? Please choose one of the palettes above.")
+    message <- paste0(
+      "The palette ", "\"", chosen_palette, "\"",
+      " does not exist. Have you checked for Typos? Please choose one of the palettes above."
+    )
     stop(message, cat(palette_names, sep = "\n"))
   }
 
@@ -59,16 +67,20 @@ view_zuericolors <- function(palette) {
   color <- palettes[[chosen_palette]]
   value <- seq_len(length(color))
   data <- data.frame(value, color)
-  p <- ggplot(data = data, aes(x = as.factor(value),
-                              fill = as.factor(value),
-                              label = color)) +
+  p <- ggplot(data = data, aes(
+    x = as.factor(value),
+    fill = as.factor(value),
+    label = color
+  )) +
     scale_fill_manual(values = c(color)) +
     scale_y_continuous(limits = c(-1, 1)) +
     geom_bar() +
     geom_text(y = -0.05, angle = 90, hjust = 1) +
     theme_void() +
     labs(title = name) +
-    theme(legend.position = "none", axis.text.x = element_blank(),
-          plot.title = element_text(size = 20, hjust = 0.5))
+    theme(
+      legend.position = "none", axis.text.x = element_blank(),
+      plot.title = element_text(size = 20, hjust = 0.5)
+    )
   return(p)
 }
