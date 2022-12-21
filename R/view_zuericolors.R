@@ -12,7 +12,7 @@
 #' @import ggpubr
 #'
 #' @examples 
-#' view_zuericolors('harmonic6')
+#' view_zuericolors('qual12')
 view_zuericolors <- function(palette) {
 
   # All Available palettes in zuericolors
