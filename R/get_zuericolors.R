@@ -8,16 +8,16 @@
 #'
 #' @return the color(s) as hex strings
 #'
-#' @examples 
+#' @examples
 #' # Get colors of palette 'qual12'
-#' get_zuericolors('qual12')
+#' get_zuericolors("qual12")
 #'
 #' # Get third color value of palette 'qual12'
-#' get_zuericolors('qual12', 3)
+#' get_zuericolors("qual12", 3)
 #'
 #' # Get first three color values of palette 'qual12'
-#' get_zuericolors('qual12', 1:3)
-#' 
+#' get_zuericolors("qual12", 1:3)
+#'
 #' @export
 get_zuericolors <- function(palette, nth) {
 
@@ -36,8 +36,10 @@ get_zuericolors <- function(palette, nth) {
 
   # Return error message if palette argument does not match one of the palettes
   if (!(chosen_palette %in% palette_names)) {
-    warning <- paste0("The palette ", "\"", chosen_palette, "\"",
-                      " does not exist. Have you checked for Typos? Please choose one of the palettes above.")
+    warning <- paste0(
+      "The palette ", "\"", chosen_palette, "\"",
+      " does not exist. Have you checked for Typos? Please choose one of the palettes above."
+    )
     stop(warning, cat(palette_names, sep = "\n"))
   }
 
@@ -57,8 +59,10 @@ get_zuericolors <- function(palette, nth) {
   # Return Error message if position (nth argument) is > than length of chosen
   # palette (argument) Else return colors of chosen palette
   if (palette_last < n_check) {
-    warning <- paste0("The palette ", "\"", chosen_palette, "\"", " contains ",
-      palette_last, " colors. Please change color position parameter (nth).")
+    warning <- paste0(
+      "The palette ", "\"", chosen_palette, "\"", " contains ",
+      palette_last, " colors. Please change color position parameter (nth)."
+    )
     stop(warning)
   }
 
