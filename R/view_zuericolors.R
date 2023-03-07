@@ -7,9 +7,8 @@
 #' @return returns a plot of the requested color/palette
 #' @export
 #'
-#' @import scales
 #' @import ggplot2
-#' @import ggpubr
+#' @importFrom patchwork wrap_plots
 #'
 #' @examples
 #' view_zuericolors("qual12")
@@ -45,7 +44,7 @@ view_zuericolors <- function(palette) {
         )
       p
     })
-    allplots <- ggarrange(plotlist = plot_list, ncol = 2, nrow = 10)
+    allplots <- wrap_plots(plot_list, ncol = 2)
     return(allplots)
   }
 
