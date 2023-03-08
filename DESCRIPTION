@@ -1,15 +1,15 @@
 Package: zuericolors
 Title: Statistik Stadt Zuerich Colors (zuericolors)
-Version: 0.2.0
+Version: 0.2.1
 Author: Statistik Stadt Zuerich
 Maintainer: Alessandro Feller <alessandro.feller@zuerich.ch>
 Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
 License: BSD-3-Clause + file LICENSE
 Encoding: UTF-8
-Imports: ggplot2, scales, ggpubr
+Imports: ggplot2, patchwork
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
