@@ -104,5 +104,11 @@ neutral (brown-blue) variation is used in cases where no valuation is wanted.
 
 <img src='pictures/div9ntr.JPG' />
 
+### Palettes for Gender and Origin
+
+<img src='pictures/gen3.JPG' />
+
+<img src='pictures/genorig4.JPG' />
+
 ## Getting help
 If you encounter a bug, please contact statistik@zuerich.ch.
