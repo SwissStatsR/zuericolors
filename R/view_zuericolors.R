@@ -56,7 +56,7 @@ view_zuericolors <- function(palette) {
   if (!(chosen_palette %in% palette_names)) {
     message <- paste0(
       "The palette ", "\"", chosen_palette, "\"",
-      " does not exist. Have you checked for Typos? Please choose one of the palettes above."
+      " does not exist. Have you checked for typos? Please choose one of the palettes above."
     )
     stop(message, cat(palette_names, sep = "\n"))
   }
