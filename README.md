@@ -105,6 +105,7 @@ neutral (brown-blue) variation is used in cases where no valuation is wanted.
 <img src='pictures/div9ntr.JPG' />
 
 ### Palettes for Gender and Origin
+`#DB247D` is used for women, `#3431DE` for men. The grey `#7C7C7C` for plotting total values (female and male combined). `#FB737E` is used for female foreigners, `#0A8DF6` for male foreigners.
 
 <img src='pictures/gen3.JPG' />
 
