@@ -15,5 +15,7 @@ palettes <- list(
   "seq9grn" = c("#CFEED8", "#A8E0B3", "#81D18F", "#5BC36A", "#34B446", "#2A9A3C", "#208032", "#166529", "#0C4B1F"),
   "seq9brn" = c("#FCDDBB", "#F7BD8C", "#F39D5E", "#EE7D2F", "#EA5D00", "#C84E00", "#A53E00", "#832F00", "#611F00"),
   "div9val" = c("#782600", "#CC4309", "#FF720C", "#FFBC88", "#E4E0DF", "#AECBFF", "#6B8EFF", "#3B51FF", "#2F2ABB"),
-  "div9ntr" = c("#A30059", "#DB247D", "#FF579E", "#FFA8D0", "#E4E0DF", "#A8DBB1", "#55BC5D", "#1F9E31", "#10652A")
+  "div9ntr" = c("#A30059", "#DB247D", "#FF579E", "#FFA8D0", "#E4E0DF", "#A8DBB1", "#55BC5D", "#1F9E31", "#10652A"),
+  "gen3" = c("#DB247D", "#3431DE", "#7C7C7C"),
+  "genorig4" = c("#DB247D", "#3431DE", "#FB737E", "#0A8DF6")
 )

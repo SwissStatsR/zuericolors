@@ -59,12 +59,12 @@ view_zuericolors("qual12")
 ### Grey Palette
 The grey color palette is not a palette in the true sense. However, its individual colors are needed for different features in [sszviz](https://github.com/StatistikStadtZuerich/sszvis):
 
-* `LightGry (#FAFAFA)`: A light grey scale is included for use in cases where a data background should be shaded out.
-* `PaleGry (#EAEAEA)`: A pale grey shade which is used for elements which should be in the background, but shouldn’t completely fade out. Currently used as the color of the links in the [sankey diagram](https://statistikstadtzuerich.github.io/sszvis/#/sankey).
-* `Gry (#D6D6D6)`: A grey scale is included for use in cases where a data value should be shaded out. Currently, it is used for the color of inactive lines in the coordinated map and line chart example. At the moment, it has only one value.
-* `DimGry (#B8B8B8)`: A dim grey shade used for highlighting elements which are normally grey (sszvis.scaleGry()). Currently, it is used as the highlight color in the [bubble map](https://statistikstadtzuerich.github.io/sszvis/#/map-signature).
-* `MedGry (#7C7C7C)`: The medium grey color, as a standalone value.
-* `DeepGry (#545454)`: The deep grey color, as a standalone value.
+* LightGry `#FAFAFA`: A light grey scale is included for use in cases where a data background should be shaded out.
+* PaleGry `#EAEAEA`: A pale grey shade which is used for elements which should be in the background, but shouldn’t completely fade out. Currently used as the color of the links in the [sankey diagram](https://statistikstadtzuerich.github.io/sszvis/#/sankey).
+* Gry `#D6D6D6`: A grey scale is included for use in cases where a data value should be shaded out. Currently, it is used for the color of inactive lines in the coordinated map and line chart example. At the moment, it has only one value.
+* DimGry `#B8B8B8`: A dim grey shade used for highlighting elements which are normally grey (sszvis.scaleGry()). Currently, it is used as the highlight color in the [bubble map](https://statistikstadtzuerich.github.io/sszvis/#/map-signature).
+* MedGry `#7C7C7C`: The medium grey color, as a standalone value.
+* DeepGry `#545454`: The deep grey color, as a standalone value.
 
 <img src='pictures/seq6gry.JPG' />
 
@@ -103,6 +103,13 @@ neutral (brown-blue) variation is used in cases where no valuation is wanted.
 <img src='pictures/div9val.JPG' />
 
 <img src='pictures/div9ntr.JPG' />
+
+### Palettes for Gender and Origin
+`#DB247D` is used for women, `#3431DE` for men. The grey `#7C7C7C` for plotting total values (female and male combined). `#FB737E` is used for female foreigners, `#0A8DF6` for male foreigners.
+
+<img src='pictures/gen3.JPG' />
+
+<img src='pictures/genorig4.JPG' />
 
 ## Getting help
 If you encounter a bug, please contact statistik@zuerich.ch.
