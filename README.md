@@ -6,6 +6,8 @@ zuericolors is an R-Package, which provides specific colors according to the cor
 * `get_zuericolors` extracts colors of a specific color palette and puts them into a vector.
 * `view_zuericolors` prints a specific color palette. Is useful for visual inspection.
 
+For the creation of CI/CD conform ggplot2 graphs see the [zueritheme](https://github.com/StatistikStadtZuerich/zueritheme) and [zueriplots](https://github.com/StatistikStadtZuerich/zueriplots) repositories.
+
 ## Installation
 The easiest way to get zuericolors is to install it from this repo:
 
