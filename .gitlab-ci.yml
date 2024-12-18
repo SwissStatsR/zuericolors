@@ -3,16 +3,7 @@ default:
   image: cmp-registry.stzh.ch/gar-proxy/szh-connect/cmp-docker/k8s-ops:0.6.0
 
 stages:
-  - deploy_test
   - deploy_prod
-
-deploy-job-test:
-  # ausgeführt wenn push in merge request
-  stage: deploy_test
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-  script:
-    - git status
     
 deploy-job-prod:
   # ausgeführt wenn Push auf Main branch
