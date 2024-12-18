@@ -1,0 +1,39 @@
+default:
+  # image specification necessary to have git available (?)
+  image: cmp-registry.stzh.ch/gar-proxy/szh-connect/cmp-docker/k8s-ops:0.6.0
+
+stages:
+  - deploy_test
+  - deploy_prod
+
+deploy-job-test:
+  # ausgeführt wenn push in merge request
+  stage: deploy_test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  script:
+    - git status
+    # prepare pushing to GitHub
+    - git fetch
+    - git checkout main
+    - git config --global user.email 'pipeline@stadt-zuerich.ch'
+    - git config --global user.name 'pipeline'
+    # create new orphan branch without history
+    - git checkout --orphan feature-github
+    - git status
+    # push this to github
+    - echo ${GITHUB_USER}
+    - git remote add github https://${GITHUB_USER}:${GITHUB_TOKEN}@${GITHUB_REMOTE}
+    - git branch -M feature-github
+    - git add .
+    - git commit -m "publish latest code"
+    - git push -uf github feature-github
+
+    
+deploy-job-prod:
+  # ausgeführt wenn Push auf Main branch
+  stage: deploy_prod
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - git status
