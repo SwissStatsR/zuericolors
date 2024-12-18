@@ -13,6 +13,14 @@ deploy-job-test:
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
   script:
     - git status
+    
+deploy-job-prod:
+  # ausgeführt wenn Push auf Main branch
+  stage: deploy_prod
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - git status
     # prepare pushing to GitHub
     - git fetch
     - git checkout main
@@ -23,11 +31,3 @@ deploy-job-test:
     - git remote add github https://${GITHUB_USER}:${GITHUB_TOKEN}@${GITHUB_REMOTE}
     - git push -uf github main
 
-    
-deploy-job-prod:
-  # ausgeführt wenn Push auf Main branch
-  stage: deploy_prod
-  rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  script:
-    - git status
