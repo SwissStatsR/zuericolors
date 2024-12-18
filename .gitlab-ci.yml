@@ -18,16 +18,10 @@ deploy-job-test:
     - git checkout main
     - git config --global user.email 'pipeline@stadt-zuerich.ch'
     - git config --global user.name 'pipeline'
-    # create new orphan branch without history
-    - git checkout --orphan feature-github
-    - git status
     # push this to github
     - echo ${GITHUB_USER}
     - git remote add github https://${GITHUB_USER}:${GITHUB_TOKEN}@${GITHUB_REMOTE}
-    - git branch -M feature-github
-    - git add .
-    - git commit -m "publish latest code"
-    - git push -uf github feature-github
+    - git push -uf github main
 
     
 deploy-job-prod:
