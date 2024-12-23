@@ -1,24 +1,4 @@
-default:
-  # image specification necessary to have git available (?)
-  image: $CI_REGISTRY/docker-hub-proxy/alpine/git:latest
-
-stages:
-  - deploy_prod
-    
-deploy-job-prod:
-  # ausgeführt wenn Push auf Main branch
-  stage: deploy_prod
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' #$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  script:
-    - git status
-    # prepare pushing to GitHub
-    - git fetch
-    - git checkout main
-    - git config --global user.email 'pipeline@stadt-zuerich.ch'
-    - git config --global user.name 'pipeline'
-    # push this to github
-    - echo ${GITHUB_USER}
-    - git remote add github https://${GITHUB_USER}:${GITHUB_TOKEN}@${GITHUB_REMOTE}
-    - git push -uf github main
-
+include:
+  - project: "cmp-sdlc.stzh.ch/OE-7035/ssz-da/templates/pipeline-templates"
+    ref: "feature-templates"
+    file: "publish-main-to-github.yml"
