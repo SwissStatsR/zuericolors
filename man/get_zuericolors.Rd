@@ -4,10 +4,10 @@
 \alias{get_zuericolors}
 \title{Get Zuericolors Palettes}
 \usage{
-get_zuericolors(palette, nth)
+get_zuericolors(palette = names(palettes), nth)
 }
 \arguments{
-\item{palette}{Name of a specific palette}
+\item{palette}{Name of a specific palette; to see the available palettes, call \code{view_zuericolors()}}
 
 \item{nth}{Position of a specific color in a palette, optional}
 }
@@ -15,7 +15,7 @@ get_zuericolors(palette, nth)
 the color(s) as hex strings
 }
 \description{
-Function to access color values of a specific zuericolors palette.
+Function to access color values of a specific zuericolors palette. To see the available palettes, call \code{view_zuericolors()}.
 }
 \examples{
 # Get colors of palette 'qual12'

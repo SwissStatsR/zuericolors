@@ -44,17 +44,6 @@ test_that("names of palettes are printed with missing arguments", {
 })
 
 test_that("error if palette does not exist", {
-  expect_error(get_zuericolors("asdf", ), "does not exist")
-  expect_error(get_zuericolors(palette = 1, nth = 1), "does not exist")
-})
-
-test_that("names of palettes are printed if palette does not exist", {
-  expect_output(
-    try(get_zuericolors("asdf"), silent = TRUE),
-    paste(names(palettes), sep = "", collapse = "\n")
-  )
-  expect_output(
-    try(get_zuericolors(palette = 1, nth = 1), silent = TRUE),
-    paste(names(palettes), sep = "", collapse = "\n")
-  )
+  expect_error(get_zuericolors("asdf", ))
+  expect_error(get_zuericolors(palette = 1, nth = 1))
 })

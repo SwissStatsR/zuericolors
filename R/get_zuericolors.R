@@ -1,8 +1,8 @@
 #' Get Zuericolors Palettes
 #'
-#' @description Function to access color values of a specific zuericolors palette.
+#' @description Function to access color values of a specific zuericolors palette. To see the available palettes, call `view_zuericolors()`.
 #'
-#' @param palette Name of a specific palette
+#' @param palette Name of a specific palette; to see the available palettes, call `view_zuericolors()`
 #'
 #' @param nth Position of a specific color in a palette, optional
 #'
@@ -19,29 +19,20 @@
 #' get_zuericolors("qual12", 1:3)
 #'
 #' @export
-get_zuericolors <- function(palette, nth) {
-
-  # All Available palettes in zuericolors
-  palette_names <- names(palettes)
+get_zuericolors <- function(palette = names(palettes), nth) {
 
   # Return error message if palette argument is missing (even if position
   # argument (named) has been provided)
   if ((missing(palette) & missing(nth)) || (missing(palette) & !missing(nth))) {
     warning <- c("You forgot to define a palette. Please choose one of the palettes above.")
-    stop(warning, cat(palette_names, sep = "\n"))
+    stop(warning, cat(names(palettes), sep = "\n"))
   }
-
+  
   # Transform palette (argument) for further use
   chosen_palette <- tolower(as.character(substitute(palette)))
-
-  # Return error message if palette argument does not match one of the palettes
-  if (!(chosen_palette %in% palette_names)) {
-    warning <- paste0(
-      "The palette ", "\"", chosen_palette, "\"",
-      " does not exist. Have you checked for Typos? Please choose one of the palettes above."
-    )
-    stop(warning, cat(palette_names, sep = "\n"))
-  }
+  
+  # check argument is one of the available palettes
+  palette <- match.arg(chosen_palette, names(palettes))
 
   # Get color palette
   palette_out <- palettes[[chosen_palette]]
