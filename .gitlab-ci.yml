@@ -1,7 +1,7 @@
 # use template for gitlab pipeline to push main to github 
 include:
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
-    ref: "feature-extends"
+    ref: "feature-extend"
     file: "publish-main-to-github.yml"
 
 publish-to-github:
