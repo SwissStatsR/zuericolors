@@ -8,4 +8,4 @@ publish-to-github:
   extends:
     - .publish-to-github
 
-    # dummy change
+    # dummy change 2
