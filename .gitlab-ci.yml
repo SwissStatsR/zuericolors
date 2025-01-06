@@ -2,10 +2,10 @@
 include:
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
     ref: "feature-extend"
-    file: "publish-main-to-github.yml"
+    file: "publish-to-github.yml"
 
-publish-to-github:
+publish-main-to-github:
   extends:
-    - .publish-to-github
+    - .publish-main-to-github
 
-    # dummy change 23456
+    # dummy change 
