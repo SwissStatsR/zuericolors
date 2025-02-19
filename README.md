@@ -109,7 +109,7 @@ Divergent palettes are used to compare data that has two extremes. These scales 
 
 <img src="pictures/div9ntr.JPG"/>
 
-### Palettes for Gender, Origin and marriage
+### Palettes for Gender, Origin and Marriage
 
 `#349894` is used for women, `#FFD736` for men, and `#986AD5` for people who identify as non-binary.
 
