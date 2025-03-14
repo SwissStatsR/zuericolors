@@ -1,6 +1,6 @@
 Package: zuericolors
 Title: Statistik Stadt Zuerich Colors (zuericolors)
-Version: 0.2.3
+Version: 0.3.0
 Author: Statistik Stadt Zuerich
 Maintainer: Alessandro Feller <alessandro.feller@zuerich.ch>
 Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
