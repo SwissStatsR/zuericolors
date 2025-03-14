@@ -14,10 +14,6 @@ include:
     ref: "feature-build-and-check"
     file: "check-and-build.yml"
     
-r-devtools-check:
-
-r-devtools-build:
-
 publish-main-to-github:
   stage: deploy-prod
   rules:
