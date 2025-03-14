@@ -1,9 +1,31 @@
-# use template for gitlab pipeline to push main to github 
+# muss man hier definieren, sonst klappt das nicht für beide includes
+stages:
+  - check
+  - build
+  - deploy-prod
+
 include:
+  # use template for gitlab pipeline to push main to github 
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
     ref: "main"
     file: "publish-to-github.yml"
+  # use template for gitlab pipeline to deploy to shinyapps.io
+  - project: "OE-7035/ssz-da/templates/pipeline-templates"
+    ref: "feature-build-and-check"
+    file: "check-and-build.yml"
+    
+r-devtools-check:
+  extends:
+    - .r-devtools-check
+
+r-devtools-build:
+  extends:
+    - .r-devtools-build
 
 publish-main-to-github:
-  extends:
-    - .publish-main-to-github
+  stage: deploy-prod
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+  script:
+    - ls
+
