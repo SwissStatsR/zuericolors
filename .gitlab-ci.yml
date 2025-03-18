@@ -1,6 +1,6 @@
 # muss man hier definieren, sonst klappt das nicht für beide includes
 stages:
-  - check
+  - test
   - build
   - deploy-prod
 
@@ -12,7 +12,11 @@ include:
   # use template for gitlab pipeline to check and build
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
     ref: "feature-build-and-check"
-    file: "check-and-build.yml"
+    file: "r-check-and-build-packages.yml"
+    
+r-devtools-check:
+  extends:
+    - .r-devtools-check
     
 publish-main-to-github:
   stage: deploy-prod
