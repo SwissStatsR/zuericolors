@@ -1,7 +1,6 @@
 # muss man hier definieren, sonst klappt das nicht für beide includes
 stages:
   - test
-  - build
   - deploy-prod
 
 include:
