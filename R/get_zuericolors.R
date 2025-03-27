@@ -25,7 +25,7 @@ get_zuericolors <- function(palette = names(palettes), nth) {
   # argument (named) has been provided)
   if ((missing(palette) & missing(nth)) || (missing(palette) & !missing(nth))) {
     warning <- c("You forgot to define a palette. Please choose one of the palettes above.")
-    stop(warning, cat(names(palettes), sep = "\n"))
+    stop(warning, cat(names(palettes), sep = "\n"))asdf
   }
   
   # Transform palette (argument) for further use
