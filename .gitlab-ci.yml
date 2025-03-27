@@ -17,10 +17,6 @@ include:
 r-devtools-check:
   extends:
     - .r-devtools-check
-
-r-devtools-build:
-  extends:
-    - .r-devtools-build
     
 publish-main-to-github:
   stage: deploy-prod
