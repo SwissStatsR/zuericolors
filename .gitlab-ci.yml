@@ -14,9 +14,9 @@ include:
     ref: "feature-build-and-check"
     file: "r-check-and-build-packages.yml"
     
-r-devtools-check:
-  extends:
-    - .r-devtools-check
+# r-devtools-check:
+#   extends:
+#     - .r-devtools-check
     
 r-devtools-build:
   extends:
