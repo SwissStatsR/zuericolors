@@ -1,8 +1,3 @@
-# muss man hier definieren, sonst klappt das nicht für beide includes
-stages:
-  - test
-  - deploy-prod
-
 include:
   # use template for gitlab pipeline to push main to github 
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
@@ -10,17 +5,18 @@ include:
     file: "publish-to-github.yml"
   # use template for gitlab pipeline to check and build
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
-    ref: "feature-build-and-check"
+    ref: "main"
     file: "r-check-and-build-packages.yml"
-    
+
+# muss man hier definieren, sonst klappt das nicht für beide includes
+stages:
+  - test
+  - deploy-prod
+
 r-devtools-check:
   extends:
     - .r-devtools-check
     
 publish-main-to-github:
   stage: deploy-prod
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-  script:
-    - ls
 
