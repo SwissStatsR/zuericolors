@@ -1,5 +1,5 @@
+# use template for gitlab pipeline to push main to github
 include:
-  # use template for gitlab pipeline to push main to github 
   - project: "OE-7035/ssz-da/templates/pipeline-templates"
     ref: "main"
     file: "publish-to-github.yml"
@@ -8,15 +8,16 @@ include:
     ref: "main"
     file: "r-check-and-build-packages.yml"
 
-# muss man hier definieren, sonst klappt das nicht für beide includes
 stages:
   - test
   - deploy-prod
 
+# run check
 r-devtools-check:
   extends:
     - .r-devtools-check
-    
-publish-main-to-github:
-  stage: deploy-prod
 
+# push main branch to github
+publish-main-to-github:
+  extends:
+    - .publish-main-to-github
