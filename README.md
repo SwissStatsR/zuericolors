@@ -2,6 +2,12 @@
 
 # zuericolors
 
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/zuericolors)](https://CRAN.R-project.org/package=zuericolors)
+[![R-CMD-check](https://github.com/StatistikStadtZuerich/zuericolors/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/StatistikStadtZuerich/zuericolors/actions/workflows/R-CMD-check.yaml)
+[![GitLab Pipeline](https://cmp-sdlc.stzh.ch/OE-7035/ssz-da/libraries/zueriverse/zuericolors/badges/main/pipeline.svg?key_text=GitlabPipeline&key_width=100)](https://cmp-sdlc.stzh.ch/OE-7035/ssz-da/libraries/zueriverse/zuericolors/badges/main/pipeline.svg?key_text=GitLabPipeline&key_width=100)
+<!-- badges: end -->
+
 zuericolors is an R-Package, which provides specific colors according to the corporate design of the city of Zurich. The package contains all colors that [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/prd/de/index/statistik.html) needs for the creation of graphs. There are two main functions in zuericolors:
 
 -   `get_zuericolors` extracts colors of a specific color palette and puts them into a vector.
