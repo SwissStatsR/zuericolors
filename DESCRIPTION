@@ -11,6 +11,7 @@ Authors@R: c(
       role = c("cph", "fnd")
     ))
 Description: zuericolors contains all colors needed by Statistik Stadt Zürich (SSZ).
+URL: https://statistikstadtzuerich.github.io/zuericolors, https://github.com/StatistikStadtZuerich/zuericolors
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: ggplot2, patchwork
