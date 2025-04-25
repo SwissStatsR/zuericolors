@@ -14,8 +14,8 @@ palettes <- list(
   "seq9red" = c("#FED2EE", "#FEAED6", "#F589BE", "#F165A5", "#ED408D", "#D1307B", "#B52069", "#991056", "#7D0044"),
   "seq9grn" = c("#CFEED8", "#A8E0B3", "#81D18F", "#5BC36A", "#34B446", "#2A9A3C", "#208032", "#166529", "#0C4B1F"),
   "seq9brn" = c("#FCDDBB", "#F7BD8C", "#F39D5E", "#EE7D2F", "#EA5D00", "#C84E00", "#A53E00", "#832F00", "#611F00"),
-  "div9val" = c("#782600", "#CC4309", "#FF720C", "#FFBC88", "#E4E0DF", "#AECBFF", "#6B8EFF", "#3B51FF", "#2F2ABB"),
-  "div9ntr" = c("#A30059", "#DB247D", "#FF579E", "#FFA8D0", "#E4E0DF", "#A8DBB1", "#55BC5D", "#1F9E31", "#10652A"),
+  "div9ntr" = c("#782600", "#CC4309", "#FF720C", "#FFBC88", "#E4E0DF", "#AECBFF", "#6B8EFF", "#3B51FF", "#2F2ABB"),
+  "div9val" = c("#A30059", "#DB247D", "#FF579E", "#FFA8D0", "#E4E0DF", "#A8DBB1", "#55BC5D", "#1F9E31", "#10652A"),
   "gender3" = c("#349894", "#FFD736", "#986AD5"),
   "gender6origin" = c("#00615D", "#349894", "#DA9C00", "#FFD736", "#5E359A", "#986AD5"),
   "gender5wedding" = c("#349894", "#FFD736", "#3431DE", "#B8B8B8", "#D6D6D6")

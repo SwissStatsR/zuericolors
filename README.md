@@ -1,6 +1,12 @@
-<img src="pictures/Hexagon_zuericolors_b.png" align="right" height="138.5"/>
+<img src="man/figures/Hexagon_zuericolors_b.png" alt="Hexagon logo for zuericolors R package" align="right" height="138.5" width="138.5"/>
 
 # zuericolors
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/zuericolors)](https://CRAN.R-project.org/package=zuericolors)
+[![R-CMD-check](https://github.com/StatistikStadtZuerich/zuericolors/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/StatistikStadtZuerich/zuericolors/actions/workflows/R-CMD-check.yaml)
+[![GitLab Pipeline](https://cmp-sdlc.stzh.ch/OE-7035/ssz-da/libraries/zueriverse/zuericolors/badges/main/pipeline.svg?key_text=GitlabPipeline&key_width=100)](https://cmp-sdlc.stzh.ch/OE-7035/ssz-da/libraries/zueriverse/zuericolors/badges/main/pipeline.svg?key_text=GitLabPipeline&key_width=100)
+<!-- badges: end -->
 
 zuericolors is an R-Package, which provides specific colors according to the corporate design of the city of Zurich. The package contains all colors that [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/prd/de/index/statistik.html) needs for the creation of graphs. There are two main functions in zuericolors:
 
@@ -13,14 +19,14 @@ For the creation of CI/CD conform ggplot2 graphs see the [zueritheme](https://gi
 
 The easiest way to get zuericolors is to install it from this repo:
 
-```{r, eval = FALSE}
+``` r
 # install.packages("devtools")
 devtools::install_github("StatistikStadtZuerich/zuericolors")
 ```
 
 Alternatively, download the files (by clicking 'Clone or download' / 'Download Zip'), extract it to any location on your computer, e.g. to your Desktop and then run:
 
-```{r, eval = FALSE}
+``` r
 remotes::install_local("<path_to_location>/zuericolors-main")
 ```
 
@@ -28,13 +34,13 @@ remotes::install_local("<path_to_location>/zuericolors-main")
 
 To check your version of zuericolors, run:
 
-```{r, eval = FALSE}
+``` r
 packageVersion("zuericolors")
 ```
 
 ## Examples
 
-```{r, message = FALSE}
+``` r
 library(zuericolors)
 
 # Get all the colors from palette "qual6"
@@ -56,7 +62,7 @@ get_zuericolors("qual12", nth = 1:4)
 view_zuericolors("qual12")
 ```
 
-<img src="pictures/qual12.JPG"/>
+<img src=" man/figures/qual12.JPG" alt="color palette 12 colors qualitative"/>
 
 ## Usage
 
@@ -71,57 +77,57 @@ The grey color palette is not a palette in the true sense. However, its individu
 -   MedGry `#7C7C7C`: The medium grey color, as a standalone value.
 -   DeepGry `#545454`: The deep grey color, as a standalone value.
 
-<img src="pictures/seq6gry.JPG"/>
+<img src=" man/figures/seq6gry.JPG" alt="color palette 6 colors grey"/>
 
 ### Qualitative Palettes
 
 Qualitative palettes are used for data that has distinct categories. They distinguish categories based on color contrast. They should never be used to compare values, use sequential or divergent palettes in this case.
 
-<img src="pictures/qual12.JPG"/>
+<img src="man/figures/qual12.JPG" alt="color palette 12 colors qualitative"/>
 
-<img src="pictures/qual6.JPG"/>
+<img src="man/figures/qual6.JPG" alt="color palette 6 colors qualitative"/>
 
-<img src="pictures/qual6a.JPG"/>
+<img src="man/figures/qual6a.JPG" alt="color palette 6 colors qualitative blue-violet-pink"/>
 
-<img src="pictures/qual6b.JPG"/>
+<img src="man/figures/qual6b.JPG" alt="color palette 6 colors qualitative green-brown-orange"/>
 
-<img src="pictures/qual12br.JPG"/>
+<img src="man/figures/qual12br.JPG" alt="color palette 12 colors bright qualitative"/>
 
-<img src="pictures/qual12da.JPG"/>
+<img src="man/figures/qual12da.JPG" alt="color palette 12 colors dark qualitative"/>
 
 ### Sequential Palettes
 
 Sequential palettes are used to compare values. These palettes are designed to have the same brightness for the same input value.
 
-<img src="pictures/seq9blu.JPG"/>
+<img src="man/figures/seq9blu.JPG" alt="color palette 9 colors sequential blue"/>
 
-<img src="pictures/seq9red.JPG"/>
+<img src="man/figures/seq9red.JPG" alt="color palette 9 colors sequential red"/>
 
-<img src="pictures/seq9grn.JPG"/>
+<img src="man/figures/seq9grn.JPG" alt="color palette 9 colors sequential green"/>
 
-<img src="pictures/seq9brn.JPG"/>
+<img src="man/figures/seq9brn.JPG" alt="color palette 9 colors sequential brown"/>
 
 ### Divergent Palettes
 
 Divergent palettes are used to compare data that has two extremes. These scales are designed to have the same brightness for the same input value. They come in two color variations: the valued (red-green) variation is used for data that has negative-positive characteristics, the neutral (brown-blue) variation is used in cases where no valuation is wanted.
 
-<img src="pictures/div9val.JPG"/>
+<img src="man/figures/div9val.png" alt="color palette 9 colors divergent red-green"/>
 
-<img src="pictures/div9ntr.JPG"/>
+<img src="man/figures/div9ntr.png" alt="color palette 9 colors divergent brown-blue"/>
 
 ### Palettes for Gender, Origin and Marriage
 
 `#349894` is used for women, `#FFD736` for men, and `#986AD5` for people who identify as non-binary.
 
-<img src="pictures/gender3.JPG" width="359"/>
+<img src="man/figures/gender3.JPG" alt="color palette 3 colors gender" width="359"/>
 
 `#349894` is also used for female foreigners (and `#00615D` for Swiss female), `#FFD736` for male foreigners (and `#DA9C00` for Swiss male), and `#986AD5` for foreigners who identify as non-binary (and `#5E359A` for Swiss individuals who identify as non-binary).
 
-<img src="pictures/gender6origin.JPG"/>
+<img src="man/figures/gender6origin.JPG" alt="color palette 6 colors gender and origin"/>
 
-`#349894` is used to depict a marriage between two women, and `#FFD736` for a marriage between two men. Same-sex marriages, in general, are represented by the color `#3431DE`. For a marriage between a woman and an unknown partner, `#B8B8B8` is used, while `#D6D6D6` is used for a marriage between a man and an unknown partner.
+`#349894` is used to depict a marriage between two women, and `#FFD736` for a marriage between two men. Same-sex marriages, in general, are represented by the color `#3431DE`. For a marriage between a woman and an alt="color palette 9 colors sequential red"unknown partner, `#B8B8B8` is used, while `#D6D6D6` is used for a marriage between a man and an unknown partner.
 
-<img src="pictures/gender5wedding.JPG"/>
+<img src="man/figures/gender5wedding.JPG" alt="color palette 5 colors gender and marital status"/>
 
 ## Getting help
 
