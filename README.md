@@ -131,4 +131,4 @@ Divergent palettes are used to compare data that has two extremes. These scales 
 
 ## Getting help
 
-If you encounter a bug, please contact [statistik\@zuerich.ch](mailto:statistik@zuerich.ch){.email}.
+If you encounter a bug, please contact [statistik\@zuerich.ch](mailto:statistik@zuerich.ch).
