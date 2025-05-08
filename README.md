@@ -1,6 +1,6 @@
 <img src="man/figures/Hexagon_zuericolors_b.png" alt="Hexagon logo for zuericolors R package" align="right" height="138.5" width="138.5"/>
 
-# zuericolors
+# zuericolors TEST
 
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/zuericolors)](https://CRAN.R-project.org/package=zuericolors)
